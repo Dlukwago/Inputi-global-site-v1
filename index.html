@@ -9,7 +9,7 @@
   <style>
     body { font-family: sans-serif; margin: 0; padding: 0; }
     header, footer { background: #0a3; color: white; text-align: center; padding: 1rem; }
-    nav ul { display: flex; justify-content: center; list-style: none; padding: 0; margin: 0; }
+    nav ul { display: flex; justify-content: center; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
     nav li { margin: 0 1rem; }
     nav a { color: white; text-decoration: none; }
     h2 { color: #0a3; margin-top: 2rem; }
@@ -18,16 +18,18 @@
     form { display: flex; flex-direction: column; max-width: 400px; margin: 1rem auto; gap: 0.5rem; }
     input, textarea { padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; }
     button { background: #0a3; color: white; border: none; padding: 0.7rem; border-radius: 5px; cursor: pointer; }
+    .logo { max-width: 200px; margin: 0 auto 1rem; }
   </style>
 </head>
 <body>
   <header>
+    <img src="images/Inputi_Global_Logo.png" alt="Inputi Global LLC Logo" class="logo" />
     <nav>
       <ul>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#meat">Meat & Meat Products</a></li>
         <li><a href="#fruits">Fruits & Vegetables</a></li>
         <li><a href="#grains">Grains & Seeds</a></li>
-        <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -36,6 +38,11 @@
   </header>
 
   <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Inputi Global LLC is a UAE-based importer of premium organic products sourced from East African smallholder farmers. We specialize in meat, fruits, vegetables, grains, and seeds — serving businesses and retailers across the Gulf region.</p>
+    </section>
+
     <section id="meat">
       <h2>Meat & Meat Products</h2>
       <div class="gallery">
@@ -69,11 +76,6 @@
       </div>
     </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Inputi Global LLC is a UAE-based importer of premium organic products sourced from East African smallholder farmers. We specialize in meat, fruits, vegetables, grains, and seeds — serving businesses and retailers across the Gulf region.</p>
-    </section>
-
     <section id="contact">
       <h2>Contact Us</h2>
       <form action="mailto:david@inputi.market" method="post" enctype="text/plain">
@@ -91,4 +93,3 @@
   </footer>
 </body>
 </html>
-    
